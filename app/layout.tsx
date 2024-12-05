@@ -2,7 +2,6 @@
 import '@/app/ui/global.css';
 
 import { Inter } from 'next/font/google';
-import { lusitana } from '@/app/ui/fonts';
 import React from "react";
 
 const inter = Inter({ subsets: ['latin'] });

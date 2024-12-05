@@ -8,3 +8,4 @@ export const lusitana = Lusitana({ subsets: ['latin'],
     weight: ['400', '700'],  // 添加 weight 属性
  });
 
+
