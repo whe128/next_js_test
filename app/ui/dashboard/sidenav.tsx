@@ -20,17 +20,11 @@ export default function SideNav() {
         <NavLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
 
-        <img src="" alt="" className="my-4 mx-auto rounded-lg shadow-md"/>
-
-        <form
-        // action =
-        // {async ()=>
-        //   {
-        //     'use server';
-        //     await signOut();
-        //     }
-        //   }
-          >
+        <form  action = {async ()=>{
+            'use server';
+            await signOut();
+            }
+          }>
 
           <button className="login-button ">
             <PowerIcon className="w-6" />
