@@ -12,7 +12,7 @@ export default async function Page() {
         <main className="flex flex-wrap justify-center items-center gap-9">
             <div className="flex-col">
                 <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-                    Car race
+                    Car Race
                 </h1>
                 <video width="900" height="500" controls autoPlay>
                     <source
