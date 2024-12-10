@@ -19,8 +19,8 @@ export default async function Page() {
     //   }=  await fetchCardData();
 
   return (
-      <main className="flex flex-wrap justify-center items-center">
-          <div className="flex-col mx-14">
+      <main className="flex flex-wrap justify-center items-center gap-9">
+          <div className="flex-col">
               <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
                   Balloon in Canberra
               </h1>
@@ -31,7 +31,7 @@ export default async function Page() {
               </video>
           </div>
 
-          <div className="flex-col mx-14 ">
+          <div className="flex-col">
               <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
                   Seashore in Sydney
               </h1>

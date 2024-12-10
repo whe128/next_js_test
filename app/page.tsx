@@ -30,13 +30,13 @@ export default function Page() {
                   </Link>
 
               </div>
-              <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12 flex-wrap md:flex-nowrap">
+              <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12 flex-wrap md:flex-nowrap gap-2">
                   {/* Add Hero Images Here */}
                   <Image
                       src="https://firebasestorage.googleapis.com/v0/b/gp-24-s2-g11.appspot.com/o/ddddddd.jpg?alt=media&token=60b0b994-fbea-401b-a2f1-92bd1e79a269"
                       width={600}
                       height={760}
-                      className="md:block hero-image-desktop"
+
                       alt="Screenshots of the dashboard project showing desktop version"
                   />
 
@@ -45,7 +45,7 @@ export default function Page() {
                       width = {500}
                       height = {620}
                       alt={"Screenshots of the dashboard project showing desktop version"}
-                      className={`hero-image-mobile`}
+
                       />
               </div>
           </div>
