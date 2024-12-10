@@ -19,8 +19,8 @@ export default async function Page() {
     //   }=  await fetchCardData();
 
   return (
-      <main className="flex ">
-          <div className="flex-col mx-4">
+      <main className="flex flex-wrap justify-center items-center">
+          <div className="flex-col mx-14">
               <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
                   Balloon in Canberra
               </h1>
@@ -31,11 +31,11 @@ export default async function Page() {
               </video>
           </div>
 
-          <div className="flex-col mx-4">
+          <div className="flex-col mx-14 ">
               <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
                   Seashore in Sydney
               </h1>
-              <video width="800" height="100" controls className="mt-36">
+              <video width="800" height="100" controls>
                   <source
                       src="https://firebasestorage.googleapis.com/v0/b/gp-24-s2-g11.appspot.com/o/eeeee.mp4?alt=media&token=6411ba21-4053-416b-a651-9a4ebcdff826"
                       type="video/mp4"/>
