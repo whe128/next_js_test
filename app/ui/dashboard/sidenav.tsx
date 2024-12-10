@@ -3,6 +3,7 @@ import NavLinks from '@/app/ui/dashboard/nav-links';
 import AcmeLogo from '@/app/ui/acme-logo';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import '@/app/ui/global.css';
+import {signOut} from '@/auth';
 
 export default function SideNav() {
   return (
@@ -18,7 +19,19 @@ export default function SideNav() {
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
-        <form>
+
+        <img src="" alt="" className="my-4 mx-auto rounded-lg shadow-md"/>
+
+        <form
+        // action =
+        // {async ()=>
+        //   {
+        //     'use server';
+        //     await signOut();
+        //     }
+        //   }
+          >
+
           <button className="login-button ">
             <PowerIcon className="w-6" />
             <div className="hidden md:block">Sign Out</div>
