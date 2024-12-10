@@ -26,10 +26,10 @@ export default function SideNav() {
             }
           }>
 
-          <button className="login-button ">
-            <PowerIcon className="w-6" />
-            <div className="hidden md:block">Sign Out</div>
-          </button>
+          {/*<button className="login-button ">*/}
+          {/*  <PowerIcon className="w-6" />*/}
+          {/*  <div className="hidden md:block">Sign Out</div>*/}
+          {/*</button>*/}
         </form>
       </div>
     </div>

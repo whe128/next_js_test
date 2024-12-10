@@ -19,29 +19,29 @@ export default async function Page() {
     //   }=  await fetchCardData();
 
   return (
-    <main>
-      <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Dashboard
-      </h1>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {/* <Card title="Collected" value={totalPaidInvoices} type="collected" />
-        <Card title="Pending" value={totalPendingInvoices} type="pending" />
-        <Card title="Total Invoices" value={numberOfInvoices} type="invoices" />
-        <Card title="Total Customers" value={numberOfCustomers} type="customers"/> */}
-        <Suspense fallback = { <CardsSkeleton /> }>
-          <CardWrapper />
-        </Suspense>
+      <main className="flex ">
+          <div className="flex-col mx-4">
+              <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+                  Balloon in Canberra
+              </h1>
+              <video width="450" height="500" controls autoPlay>
+                  <source
+                      src="https://firebasestorage.googleapis.com/v0/b/gp-24-s2-g11.appspot.com/o/bbbbbbbbb.mp4?alt=media&token=7f040491-a80c-48a7-a8e9-ce3e7c5882e6"
+                      type="video/mp4"/>
+              </video>
+          </div>
 
-      </div>
-      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        <Suspense fallback={<RevenueChartSkeleton />}>
-          <RevenueChart />
-        </Suspense>
+          <div className="flex-col mx-4">
+              <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+                  Seashore in Sydney
+              </h1>
+              <video width="800" height="100" controls className="mt-36">
+                  <source
+                      src="https://firebasestorage.googleapis.com/v0/b/gp-24-s2-g11.appspot.com/o/eeeee.mp4?alt=media&token=6411ba21-4053-416b-a651-9a4ebcdff826"
+                      type="video/mp4"/>
+              </video>
+          </div>
 
-        <Suspense fallback={<LatestInvoicesSkeleton />}>
-          <LatestInvoices />
-        </Suspense>
-      </div>
-    </main>
+      </main>
   );
 }
